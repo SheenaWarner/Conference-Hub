@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>References — General Anesthesia &amp; SMM (nuMoM2b) — Sheena Warner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #202b26;
+    --ink-soft: #4a564f;
+    --paper: #f6f3ec;
+    --line: #d9d2c2;
+    --teal: #2e5c56;
+    --teal-deep: #1d3d38;
+    --rule: #c9c0aa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--teal-deep); }
+  a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px 60px; }
+  header { border-bottom: 3px solid var(--ink); padding: 36px 0 22px; }
+  .back {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .back:hover { color: var(--teal-deep); }
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal-deep);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+  .meta { font-size: 0.9rem; color: var(--ink-soft); margin: 0; }
+  ol.refs {
+    list-style: none;
+    margin: 30px 0 0;
+    padding: 0;
+    counter-reset: ref;
+  }
+  ol.refs li {
+    counter-increment: ref;
+    padding: 14px 0 14px 3em;
+    border-top: 1px solid var(--line);
+    position: relative;
+    font-size: 0.92rem;
+  }
+  ol.refs li:first-child { border-top: none; }
+  ol.refs li::before {
+    content: counter(ref) ".";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+  }
+  ol.refs em { font-style: italic; }
+  ol.refs a { word-break: break-word; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">&larr; Back to research hub</a>
+    <p class="kicker">Full Reference List</p>
+    <h1>General Anesthesia and Severe Maternal Morbidity Among Nulliparous Women: nuMoM2b Cohort</h1>
+    <p class="meta">Companion reference list for the AANA Annual Congress 2026 poster. Overlap weighting versus propensity score matching in a rare obstetric exposure &mdash; currently under review at Research Methods in Medicine &amp; Health Sciences.</p>
+  </header>
+
+  <ol class="refs">
+    <li>Eliminating preventable maternal mortality and morbidity. <em>Policy Priorities</em>. <a href="https://www.acog.org/advocacy/policy-priorities/maternal-mortality-prevention">acog.org/advocacy/policy-priorities/maternal-mortality-prevention</a> (accessed 24 February 2025).</li>
+    <li>CDC. Pregnancy-related deaths: data from maternal mortality review committees in 38 U.S. States, 2020. <em>Maternal Mortality Prevention</em>. <a href="https://www.cdc.gov/maternal-mortality/php/data-research/index.html">cdc.gov/maternal-mortality/php/data-research/index.html</a> (2025, accessed 24 February 2025).</li>
+    <li>Chen Y, Shiels MS, Uribe-Leitz T, et al. Pregnancy-related deaths in the US, 2018&ndash;2022. <em>JAMA Netw Open</em> 2025; 8: e254325.</li>
+    <li>McQuaid E, Leffert LR, Bateman BT. The role of the anesthesiologist in preventing severe maternal morbidity and mortality. <em>Clin Obstet Gynecol</em> 2018; 61: 372&ndash;386.</li>
+    <li>Abir G, Mhyre J. Maternal mortality and the role of the obstetric anesthesiologist. <em>Best Pract Res Clin Anaesthesiol</em> 2017; 31: 91&ndash;105.</li>
+    <li>Guglielminotti J, Landau R, Li G. Adverse events and factors associated with potentially avoidable use of general anesthesia in cesarean deliveries. <em>Anesthesiology</em> 2019; 130: 912&ndash;922.</li>
+    <li>Kragenbrink L, Schopper CM, McNeil RB, et al. NuMoM2b study insights: primary exposures, outcomes, and directions for future research. <em>Am J Perinatol</em> 2024; 41: 2021&ndash;2024.</li>
+    <li>Erickson EN, Carlson NS. Maternal morbidity predicted by an intersectional social determinants of health phenotype: a secondary analysis of the NuMoM2b dataset. <em>Reprod Sci</em> 2022; 29: 2013&ndash;2029.</li>
+    <li>Lucchini M, Rayport Y, Valeri L, et al. Racial/ethnic disparities in sleep-disordered breathing during pregnancy in the nuMoM2b study. <em>Obesity</em> 2023; 31: 923&ndash;933.</li>
+    <li>Silver R. Nulliparous Pregnancy Outcomes Study: Monitoring Mothers-to-be. 2021; 689.05 MB.</li>
+    <li>Haas DM, Parker CB, Wing DA, et al. A description of the methods of the Nulliparous Pregnancy Outcomes Study: monitoring mothers-to-be (nuMoM2b). <em>Am J Obstet Gynecol</em> 2015; 212: 539.e1&ndash;539.e24.</li>
+    <li>Guglielminotti J, Li G. Exposure to general anesthesia for cesarean delivery and odds of severe postpartum depression requiring hospitalization. <em>Anesth Analg</em> 2020; 131: 1421&ndash;1429.</li>
+    <li>Mhyre JM, Sultan P. General anesthesia for cesarean delivery: occasionally essential but best avoided. <em>Anesthesiology</em> 2019; 130: 864&ndash;866.</li>
+    <li>Stanislaus M, Lee A. Disparities in obstetric anesthesia. <em>Anesthesiol Clin</em> 2026; S1932227526000285.</li>
+    <li>Thomas CL, Lange EMS, Banayan JM, et al. Racial and ethnic disparities in receipt of general anesthesia for cesarean delivery. <em>JAMA Netw Open</em> 2024; 7: e2350825.</li>
+    <li>Shadish WR, Steiner PM. A primer on propensity score analysis. <em>Newborn Infant Nurs Rev</em> 2010; 10: 19&ndash;26.</li>
+    <li>Li F, Thomas LE, Li F. Addressing extreme propensity scores via the overlap weights. <em>Am J Epidemiol</em> 2019; 188: 250&ndash;257.</li>
+    <li>Lim G, Facco FL, Nathan N, et al. A review of the impact of obstetric anesthesia on maternal and neonatal outcomes. <em>Anesthesiology</em> 2018; 129: 192&ndash;215.</li>
+    <li>CDC. Identifying severe maternal morbidity (SMM). <em>Maternal Infant Health</em>. <a href="https://www.cdc.gov/maternal-infant-health/php/severe-maternal-morbidity/icd.html">cdc.gov/maternal-infant-health/php/severe-maternal-morbidity/icd.html</a> (2024, accessed 2 December 2024).</li>
+    <li>Guglielminotti J, Lee A, Landau R, et al. Structural racism and use of labor neuraxial analgesia among non-Hispanic Black birthing people. <em>Obstet Gynecol</em> 2024; 143: 571&ndash;581.</li>
+    <li>Watson SE, Richardson AL, Lucas DN. Neuraxial and general anaesthesia for caesarean section. <em>Best Pract Res Clin Anaesthesiol</em> 2022; 36: 53&ndash;68.</li>
+    <li>Taylor CR, Dominguez JE, Habib AS. Obesity and obstetric anesthesia: current insights. <em>Local Reg Anesth</em> 2019; Volume 12: 111&ndash;124.</li>
+    <li>American Society of Anesthesiologists (ASA) Task Force. Practice guidelines for obstetric anesthesia. <em>Anesthesiology</em> 2016; 124: 270&ndash;300.</li>
+    <li>AANA Board of Directors. &lsquo;Analgesia and Anesthesia for the Obstetric Patient&rsquo; practice guidelines. <em>American Association of Nurse Anesthesiology</em>. <a href="https://issuu.com/aanapublishing/docs/analgesia_and_anesthesia_for_the_obstetric_patient">issuu.com/aanapublishing</a> (2022, accessed 2 November 2024).</li>
+    <li>Bosschieter TM, Xu Z, Lan H, et al. Interpretable predictive models to understand risk factors for maternal and fetal outcomes. <em>J Healthc Inform Res</em> 2024; 8: 65&ndash;87.</li>
+    <li>Callaghan WM, Creanga AA, Kuklina EV. Severe maternal morbidity among delivery and postpartum hospitalizations in the United States. <em>Obstet Gynecol</em> 2012; 120: 1029&ndash;1036.</li>
+    <li>Yasodha P. Data preprocessing methods for machine learning: an empirical comparison. <em>Int J Multidiscip Res IJFMR</em>; 7. DOI: 10.36948/ijfmr.2025.v07i03.48569.</li>
+    <li>Holmberg MJ, Andersen LW. Collider bias. <em>JAMA</em> 2022; 327: 1282&ndash;1283.</li>
+    <li>Austin PC. Balance diagnostics for comparing the distribution of baseline covariates between treatment groups in propensity-score matched samples. <em>Stat Med</em> 2009; 28: 3083&ndash;3107.</li>
+    <li>Akiba T, Sano S, Yanase T, et al. Optuna: a next-generation hyperparameter optimization framework. In: <em>Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</em>. New York, NY: ACM, pp. 2623&ndash;2631.</li>
+    <li>Austin PC. Optimal caliper widths for propensity-score matching when estimating differences in means and differences in proportions in observational studies. <em>Pharm Stat</em> 2011; 10: 150&ndash;161.</li>
+    <li>Berkovitz Shperling R, Lerner-Geva L, Ariel G, et al. Predictive factors for emergency cesarean section in grand multiparous compared to primiparous and multiparous women. <em>Int J Gynaecol Obstet</em>. DOI: 10.1002/ijgo.70858.</li>
+  </ol>
+</div>
+</body>
+</html>
