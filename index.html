@@ -175,6 +175,7 @@
     margin: 0 0 14px;
   }
 
+  .card .actions { display: flex; flex-wrap: wrap; gap: 10px; }
   .card .actions a {
     display: inline-block;
     font-family: 'IBM Plex Mono', monospace;
@@ -188,6 +189,12 @@
     border-radius: 4px;
   }
   .card .actions a:hover { background: var(--teal); }
+  .card.placeholder .actions a {
+    background: transparent;
+    color: var(--teal-deep);
+    border: 1.5px solid var(--rule);
+  }
+  .card.placeholder .actions a:hover { border-color: var(--teal-deep); }
 
   .card.placeholder {
     border-style: dashed;
@@ -295,7 +302,8 @@
       <p class="meta">AANA Annual Congress 2026 &middot; Warner, S., Bao, C., He, Y., Kandikonda, Y.S.R., Carlson, N.S., Wiltse Nicely, K.L., Chandler, R.D., &amp; Manyam, R.</p>
       <p class="summary">Overlap-weighted analysis of general anesthesia vs. neuraxial anesthesia and severe maternal morbidity in 7,798 nulliparous nuMoM2b deliveries. GA carried a 22.4 percentage-point higher adjusted SMM rate, consistent across sensitivity analyses; residual urgency confounding limits causal interpretation.</p>
       <div class="actions">
-        <a href="Warner_Sheena_AANA2026_Poster.pdf">View poster (PDF)</a>
+        <a href="Warner_Sheena_AANA2026_Poster">View poster (PDF)</a>
+        <a href="references-aana.html">References</a>
       </div>
     </div>
 
@@ -304,7 +312,10 @@
         <h3 style="color: var(--ink-soft);">MLHC 2026 &mdash; Severe Maternal Morbidity Risk Stratification (nuMoM2b, CatBoost)</h3>
         <span class="stamp progress">In progress</span>
       </div>
-      <p style="margin:0;">Poster in development for MLHC 2026, Baltimore. Check back closer to the conference.</p>
+      <p style="margin:0 0 14px;">Poster in development for MLHC 2026, Baltimore. Check back closer to the conference.</p>
+      <div class="actions">
+        <a href="references-mlhc.html">References</a>
+      </div>
     </div>
   </section>
 
