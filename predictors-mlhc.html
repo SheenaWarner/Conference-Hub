@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>35 Clinician-Curated Predictors — SMM Prediction, nuMoM2b — Sheena Warner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #202b26;
+    --ink-soft: #4a564f;
+    --paper: #f6f3ec;
+    --paper-raised: #ffffff;
+    --line: #d9d2c2;
+    --teal: #2e5c56;
+    --teal-deep: #1d3d38;
+    --amber: #a6763c;
+    --rule: #c9c0aa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--teal-deep); }
+  a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px 60px; }
+  header { border-bottom: 3px solid var(--ink); padding: 36px 0 22px; }
+  .back {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .back:hover { color: var(--teal-deep); }
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal-deep);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+  .meta { font-size: 0.9rem; color: var(--ink-soft); margin: 0; }
+
+  .group {
+    margin-top: 30px;
+  }
+  .group-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+  }
+  .group-head h2 {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.15rem;
+    margin: 0;
+  }
+  .group-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--amber);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  ul.predictors {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.predictors li {
+    padding: 10px 0;
+    border-top: 1px solid var(--line);
+    font-size: 0.94rem;
+  }
+  ul.predictors li:first-child { border-top: none; }
+
+  .total {
+    margin-top: 34px;
+    padding: 16px 18px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+  .total strong { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">&larr; Back to research hub</a>
+    <p class="kicker">Predictor Variable Selection</p>
+    <h1>35 Clinician-Curated Constructs</h1>
+    <p class="meta">Supervised Machine Learning for Severe Maternal Morbidity Prediction Using Clinician-Curated Obstetric Anesthesia Variables in the nuMoM2b Cohort &middot; companion reference for the MLHC 2026 poster.</p>
+  </header>
+
+  <div class="group">
+    <div class="group-head">
+      <h2>Sociodemographic characteristics</h2>
+      <span class="group-count">8</span>
+    </div>
+    <ul class="predictors">
+      <li>Age category</li>
+      <li>Race/ethnicity</li>
+      <li>Education</li>
+      <li>Marital status</li>
+      <li>Insurance</li>
+      <li>Self-rated English proficiency</li>
+      <li>Years in the U.S.</li>
+      <li>Gravidity</li>
+    </ul>
+  </div>
+
+  <div class="group">
+    <div class="group-head">
+      <h2>Late-pregnancy clinical status</h2>
+      <span class="group-count">11</span>
+    </div>
+    <ul class="predictors">
+      <li>Body mass index (BMI)</li>
+      <li>Gestational age at delivery</li>
+      <li>Last prenatal systolic blood pressure</li>
+      <li>Last prenatal diastolic blood pressure</li>
+      <li>Hematocrit</li>
+      <li>Platelet count</li>
+      <li>White blood cell (WBC) count</li>
+      <li>New-onset hypertensive disorder at or after 20 weeks</li>
+      <li>New-onset proteinuria</li>
+      <li>Cerclage</li>
+      <li>Suspected preeclampsia/HELLP/eclampsia</li>
+    </ul>
+  </div>
+
+  <div class="group">
+    <div class="group-head">
+      <h2>Baseline medical history</h2>
+      <span class="group-count">13</span>
+    </div>
+    <ul class="predictors">
+      <li>Chronic hypertension</li>
+      <li>Diabetes</li>
+      <li>Asthma</li>
+      <li>Sleep apnea</li>
+      <li>Renal disease</li>
+      <li>Cardiac disease</li>
+      <li>Autoimmune disease</li>
+      <li>Seizure disorder</li>
+      <li>Thyroid disorder</li>
+      <li>Prior uterine surgery</li>
+      <li>Thrombocytopenia history</li>
+      <li>Bleeding disorder</li>
+      <li>History of thromboembolic events</li>
+    </ul>
+  </div>
+
+  <div class="group">
+    <div class="group-head">
+      <h2>Behavioral risk factors</h2>
+      <span class="group-count">3</span>
+    </div>
+    <ul class="predictors">
+      <li>Tobacco use</li>
+      <li>Alcohol use</li>
+      <li>Drug use</li>
+    </ul>
+  </div>
+
+  <div class="total">Total: <strong>35</strong> clinician-curated predictor constructs (8 + 11 + 13 + 3)</div>
+</div>
+</body>
+</html>
