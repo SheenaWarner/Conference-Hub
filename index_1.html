@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheena Warner, MS, CRNA, APN — Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #202b26;
+    --ink-soft: #4a564f;
+    --paper: #f6f3ec;
+    --paper-raised: #ffffff;
+    --line: #d9d2c2;
+    --teal: #2e5c56;
+    --teal-deep: #1d3d38;
+    --amber: #a6763c;
+    --rule: #c9c0aa;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--teal-deep); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header.masthead {
+    border-bottom: 3px solid var(--ink);
+    padding: 40px 0 24px;
+  }
+
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal-deep);
+    margin: 0 0 10px;
+  }
+
+  h1.name {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: clamp(1.9rem, 6vw, 2.6rem);
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .credentials {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+  }
+
+  .blurb {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+    margin: 0 0 20px;
+  }
+
+  nav.jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  nav.jump a {
+    text-decoration: none;
+    color: var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+  }
+  nav.jump a:hover { border-color: var(--ink); }
+
+  section { padding: 44px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  h2.section-title {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .section-note {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Status stamps: the recurring device tying every entry to where it stands */
+  .stamp {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border: 1.5px solid currentColor;
+    border-radius: 3px;
+    white-space: nowrap;
+    transform: rotate(-1.2deg);
+  }
+  .stamp.published { color: var(--teal-deep); }
+  .stamp.review    { color: var(--amber); }
+  .stamp.progress  { color: var(--ink-soft); border-style: dashed; }
+
+  .card {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 22px;
+    margin-bottom: 16px;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .card h3 {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  .card .meta {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin: 4px 0 10px;
+  }
+
+  .card .summary {
+    font-size: 0.92rem;
+    color: var(--ink);
+    margin: 0 0 14px;
+  }
+
+  .card .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .card .actions a {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    background: var(--teal-deep);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 4px;
+  }
+  .card .actions a:hover { background: var(--teal); }
+  .card.placeholder .actions a {
+    background: transparent;
+    color: var(--teal-deep);
+    border: 1.5px solid var(--rule);
+  }
+  .card.placeholder .actions a:hover { border-color: var(--teal-deep); }
+
+  .card.placeholder {
+    border-style: dashed;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+
+  ol.pub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: pub;
+  }
+
+  ol.pub-list li {
+    counter-increment: pub;
+    padding: 14px 0 14px 2.6em;
+    border-top: 1px solid var(--line);
+    position: relative;
+    font-size: 0.94rem;
+  }
+  ol.pub-list li:first-child { border-top: none; }
+
+  ol.pub-list li::before {
+    content: counter(pub);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+  }
+
+  ol.pub-list .cite-journal { font-style: italic; }
+  ol.pub-list a.doi {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  ul.review-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.review-list li {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    font-size: 0.94rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  ul.review-list li:first-child { border-top: none; }
+  ul.review-list .cite-journal { font-style: italic; color: var(--ink-soft); }
+  ul.review-list .item-text { flex: 1; }
+  ul.review-list .xref {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--teal-deep);
+    margin-top: 4px;
+  }
+
+  footer {
+    padding: 34px 0 60px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .card, nav.jump a { transition: background 0.15s ease, border-color 0.15s ease; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">Research &amp; Conference Materials</p>
+    <h1 class="name">Sheena Warner</h1>
+    <p class="credentials">MS, CRNA, APN &middot; PhD Candidate, Nell Hodgson Woodruff School of Nursing, Emory University</p>
+    <p class="blurb">Machine learning for obstetric anesthesia risk stratification, human&ndash;AI clinical decision support, and the LABOR Study. Scan the code on my badge, or bookmark this page.</p>
+    <nav class="jump">
+      <a href="#posters">Posters</a>
+      <a href="#publications">Publications</a>
+      <a href="#under-review">Under Review</a>
+    </nav>
+  </header>
+
+  <section id="posters">
+    <div class="section-head">
+      <h2 class="section-title">Conference Posters</h2>
+      <span class="section-note">2026 season</span>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3>General Anesthesia and Severe Maternal Morbidity Among Nulliparous Women: nuMoM2b Cohort</h3>
+        <span class="stamp published">Poster</span>
+      </div>
+      <p class="meta">AANA Annual Congress 2026 &middot; Warner, S., Bao, C., He, Y., Kandikonda, Y.S.R., Carlson, N.S., Wiltse Nicely, K.L., Chandler, R.D., &amp; Manyam, R.</p>
+      <p class="summary">Overlap-weighted analysis of general anesthesia vs. neuraxial anesthesia and severe maternal morbidity in 7,798 nulliparous nuMoM2b deliveries. GA carried a 22.4 percentage-point higher adjusted SMM rate, consistent across sensitivity analyses; residual urgency confounding limits causal interpretation.</p>
+      <div class="actions">
+        <a href="aana-2026-poster.pdf">View poster (PDF)</a>
+        <a href="references-aana.html">References</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3>Supervised Machine Learning for Severe Maternal Morbidity Prediction Using Clinician-Curated Obstetric Anesthesia Variables in the nuMoM2b Cohort</h3>
+        <span class="stamp published">Poster</span>
+      </div>
+      <p class="meta">MLHC 2026, Baltimore &middot; Warner, S., He, Y., Bao, C., Kandikonda, Y.S.R., Carlson, N.S., Wiltse Nicely, K.L., Chandler, R.D., Xiao, R., &amp; Manyam, R.</p>
+      <p class="summary">35 clinician-curated obstetric anesthesia predictors across six models on 9,289 nuMoM2b participants (9.46% composite SMM prevalence). CatBoost gave the best balanced operating point (sensitivity 0.618, specificity 0.669, F1 0.258, MCC 0.175); SHAP identified hematocrit, new-onset hypertension, and gestational age as top drivers. Discrimination remained modest overall, suggesting feature discovery may matter more than algorithm choice.</p>
+      <div class="actions">
+        <a href="mlhc-2026-poster.pdf">View poster (PDF)</a>
+        <a href="references-mlhc.html">References</a>
+        <a href="predictors-mlhc.html">35 Predictors</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="section-head">
+      <h2 class="section-title">Current Publications</h2>
+      <span class="section-note">Published &amp; in press</span>
+    </div>
+
+    <ol class="pub-list">
+      <li>He, Y., Bao, C., <strong>Warner, S.</strong>, Zhang, Y., Keeling, W.B., &amp; Manyam, R. (2026). Interpretable machine learning risk model to predict readmission after coronary artery bypass grafting. <span class="cite-journal">The Journal of Thoracic and Cardiovascular Surgery Open</span> &mdash; In Press.</li>
+
+      <li>Stucky, C.H., House, S.L., <strong>Warner, S.</strong>, &amp; Sipos, M.L. (2026). Building high-performing clinical teams: Applying the science of teamwork in critical and dynamic healthcare environments. <span class="cite-journal">Excellence and Credentialing in Health Care</span>, 1(3), e0029. <a class="doi" href="https://doi.org/10.1097/echc.0000000000000029">doi.org/10.1097/echc.0000000000000029</a></li>
+
+      <li><strong>Warner, S.</strong>, Stucky, C.H., Haegerich, T., &amp; Yauger, Y.J. (2026). The cognitive transaction: Toward a human factors research agenda for artificial intelligence in anesthesia. <span class="cite-journal">JMIR Preprints</span>. <a class="doi" href="https://doi.org/10.2196/preprints.102683">doi.org/10.2196/preprints.102683</a></li>
+
+      <li><strong>Warner, S.</strong>, Xiao, R., Wiltse Nicely, K.L., &amp; Chandler, R.D. (2026). From Joint Cognitive Systems to Human&ndash;AI Joint Cognitive Systems: A theory critique and application to obstetric anesthesia risk assessment. <span class="cite-journal">Nursing Science Quarterly</span>, 39(2). <a class="doi" href="https://doi.org/10.1177/08943184251414311">doi.org/10.1177/08943184251414311</a></li>
+
+      <li>Newell, S.M., Roberts, A., &amp; <strong>Warner, S.</strong> (2026). Empowering future CRNAs: The case for obstetric rotations in anesthesia education. <span class="cite-journal">AANA Journal</span>, 94(1). <a class="doi" href="https://doi.org/10.70278/AANAJ/.0000001057">doi.org/10.70278/AANAJ/.0000001057</a></li>
+
+      <li>Chandler, R.D., <strong>Warner, S.</strong>, Johnson, R., &amp; Wells, J. (2025). Reimagining HIV prevention for women. <span class="cite-journal">Clinical Journal for Nurse Practitioners in Women's Health</span>, 2(4), 230&ndash;37. <a class="doi" href="https://doi.org/10.1891/CJNPWH-2025-0030">doi.org/10.1891/CJNPWH-2025-0030</a></li>
+
+      <li>Chandler, R.D., <strong>Warner, S.</strong>, Guillaume, D., &amp; Wells, J. (2025). Exploring ChatGPT's role in women's health self-education: A descriptive study comparing responses with public health guidance. <span class="cite-journal">Nursing Outlook</span>, 73(4), 102468. <a class="doi" href="https://doi.org/10.1016/j.outlook.2025.102468">doi.org/10.1016/j.outlook.2025.102468</a></li>
+
+      <li>Chandler, R.D., <strong>Warner, S.</strong>, Aidoo-Frimpong, G., &amp; Wells, J. (2024). What did you say, ChatGPT? The use of AI in Black women's HIV self-education: An inductive qualitative data analysis. <span class="cite-journal">Journal of the Association of Nurses in AIDS Care</span>, 35(3), 294&ndash;302. <a class="doi" href="https://doi.org/10.1097/JNC.0000000000000468">doi.org/10.1097/JNC.0000000000000468</a></li>
+    </ol>
+  </section>
+
+  <section id="under-review">
+    <div class="section-head">
+      <h2 class="section-title">Under Review</h2>
+      <span class="section-note">Titles &amp; status only</span>
+    </div>
+
+    <ul class="review-list">
+      <li>
+        <span class="item-text">
+          <strong>Warner, S.</strong>, He, Y., Bao, C., Kandikonda, Y.S.R., Carlson, N.S., Wiltse Nicely, K.L., Chandler, R.D., Xiao, R., &amp; Manyam, R. &mdash; Supervised machine learning for severe maternal morbidity prediction using clinician-curated obstetric anesthesia predictors in the nuMoM2b cohort. <span class="cite-journal">In review at JAMIA.</span>
+          <span class="xref">&uarr; companion work to the MLHC 2026 poster</span>
+        </span>
+        <span class="stamp review">Review</span>
+      </li>
+
+      <li>
+        <span class="item-text">
+          <strong>Warner, S.</strong>, Bao, C., He, Y., Carlson, N.S., Wiltse Nicely, K.L., Chandler, R.D., &amp; Manyam, R. &mdash; Overlap weighting versus propensity score matching in a rare obstetric exposure: anesthesia modality and severe maternal morbidity in the nuMoM2b cohort. <span class="cite-journal">In review at Research Methods in Medicine &amp; Health Sciences.</span>
+          <span class="xref">&uarr; companion work to the AANA 2026 poster</span>
+        </span>
+        <span class="stamp review">Review</span>
+      </li>
+
+      <li>
+        <span class="item-text">
+          <strong>Warner, S.</strong>, Stucky, C.H., Haegerich, T., &amp; Yauger, Y.J. &mdash; Augmented anesthesia: A call for CRNA leadership in clinical AI. <span class="cite-journal">In review at Nursing Outlook.</span>
+        </span>
+        <span class="stamp review">Review</span>
+      </li>
+
+      <li>
+        <span class="item-text">
+          Newell, S.M., <strong>Warner, S.</strong>, Lambert, J., Young, T., &amp; Kolucki, F. &mdash; Specialized anesthesia care versus generalist anesthesiology in obstetrics: A retrospective study on safety, efficacy, and cost-effectiveness of a dedicated CRNA group. <span class="cite-journal">In review at BMC Health Services Research.</span>
+        </span>
+        <span class="stamp review">Review</span>
+      </li>
+
+      <li>
+        <span class="item-text">
+          Chandler, R.D., Guillaume, D., Ross, H., <strong>Warner, S.</strong>, Thompson, M.C.T., Latus, L., &amp; Tan, J.Y. &mdash; Black women's contributions to PrEP-inclusive health communication and marketing strategies: A qualitative analysis. <span class="cite-journal">In review at Journal of Racial and Ethnic Disparities.</span>
+        </span>
+        <span class="stamp review">Review</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>sheena.warner@emory.edu &middot; Nell Hodgson Woodruff School of Nursing, Emory University</p>
+  </footer>
+
+</div>
+</body>
+</html>
